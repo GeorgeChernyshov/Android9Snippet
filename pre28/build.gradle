@@ -1,0 +1,49 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.example.pre28'
+    compileSdk 27
+
+    defaultConfig {
+        applicationId "com.example.pre28"
+        minSdk 22
+        targetSdk 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+//    implementation "android.core:core-ktx:$core_version"
+    implementation "com.android.support:appcompat-v7:$appcompat_version"
+    implementation "com.android.support:design:$appcompat_version"
+    testImplementation "junit:junit:$junit_version"
+//    androidTestImplementation "android.test.ext:junit:$test_version"
+//    androidTestImplementation "android.test.espresso:espresso-core:$espresso_version"
+
+    //navigation
+//    implementation "android.navigation:navigation-fragment-ktx:$navigation_version"
+//    implementation "android.navigation:navigation-ui-ktx:$navigation_version"
+}
