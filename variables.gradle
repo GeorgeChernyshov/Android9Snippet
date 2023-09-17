@@ -1,6 +1,5 @@
 ext {
     //androidx
-    core_version = "1.6.0"
     appcompat_version = "27.1.1"
     material_version = "1.4.0"
     navigation_version = "2.3.2"
