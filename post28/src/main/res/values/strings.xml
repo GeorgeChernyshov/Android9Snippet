@@ -16,8 +16,9 @@
     <string name="display_cutout_not_supported">Cutout settings not supported</string>
     <string name="display_cutout_type">Cutout type</string>
 
-    <!-- Image Decoder -->
-    <string name="image_decoder_title">Image Decoder result</string>
+    <!-- Images -->
+    <string name="image_gif_title">Gif image</string>
+    <string name="image_rounded_corners_title">Image with rounded corners</string>
 
     <!-- Indoor positioning -->
     <string name="indoor_positioning_title">Indoor positioning</string>

@@ -13,7 +13,8 @@
         tools:targetApi="27">
 
         <activity
-            android:name=".MainActivity"
+            android:label="@string/label_new_features"
+            android:name=".NewFeaturesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

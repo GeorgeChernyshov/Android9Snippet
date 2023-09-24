@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Android9Snippet-pre28</string>
+
+    <!-- Activity labels -->
+    <string name="label_new_features">pre28-New Features</string>
+
+    <!-- Images -->
+    <string name="image_gif_title">Gif image</string>
+    <string name="image_rounded_corners_title">Image with rounded corners</string>
 </resources>
