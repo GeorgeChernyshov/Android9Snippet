@@ -2,6 +2,8 @@
     <string name="app_name">Android9Snippet-post28</string>
 
     <!-- Activity labels -->
+    <string name="label_camera">Multi-camera Support</string>
+    <string name="label_hdr">HDR Video</string>
     <string name="label_indoor_positioning">post28-Indoor Positioning</string>
     <string name="label_new_features">New Features</string>
 
@@ -10,11 +12,20 @@
     <string name="button_send_chat_notification">Send chat notification</string>
     <string name="button_send_system_notification">Send system notification</string>
 
+    <!-- Camera -->
+    <string name="camera_multiple_not_supported">Multi-Camera is not supported</string>
+    <string name="camera_multiple_supported">Multi-Camera is supported</string>
+    <string name="camera_multiple_title">Multi-Camera Support</string>
+
     <!-- Display cutout -->
     <string name="display_cutout_none">No cutout</string>
     <string name="display_cutout_top">Top cutout</string>
     <string name="display_cutout_not_supported">Cutout settings not supported</string>
     <string name="display_cutout_type">Cutout type</string>
+
+    <!-- HDR -->
+    <string name="hdr_not_supported">VP9 not supported</string>
+    <string name="hdr_title">If your device supports VP9 format, the video below should play</string>
 
     <!-- Images -->
     <string name="image_gif_title">Gif image</string>

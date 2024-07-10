@@ -1,6 +1,6 @@
 package com.example.post28
 
-import android.graphics.Bitmap
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.ImageDecoder
 import android.graphics.Paint
@@ -26,6 +26,10 @@ class NewFeaturesActivity : AppCompatActivity() {
 
         binding = ActivityNewFeaturesBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.nextButton.setOnClickListener {
+            startActivity(Intent(this, CameraActivity::class.java))
+        }
     }
 
     override fun onAttachedToWindow() {
