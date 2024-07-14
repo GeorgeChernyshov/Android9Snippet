@@ -24,7 +24,10 @@
     <string name="display_cutout_type">Cutout type</string>
 
     <!-- HDR -->
+    <string name="hdr_heif_title">HEIF support</string>
+    <string name="hdr_load_heif">Load HEIF image</string>
     <string name="hdr_not_supported">VP9 not supported</string>
+    <string name="hdr_save_heif">Create HEIF image</string>
     <string name="hdr_title">If your device supports VP9 format, the video below should play</string>
 
     <!-- Images -->

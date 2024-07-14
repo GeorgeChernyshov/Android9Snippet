@@ -7,7 +7,7 @@ import android.hardware.camera2.CameraManager
 import android.hardware.camera2.CameraMetadata
 import android.os.Build
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.example.post28.databinding.ActivityCameraBinding
 
 class CameraActivity : AppCompatActivity() {
