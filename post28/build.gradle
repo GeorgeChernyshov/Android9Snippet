@@ -6,15 +6,22 @@ plugins {
 android {
     namespace 'com.example.post28'
     compileSdk 28
+    ndkVersion '22.1.7171670'
 
     defaultConfig {
         applicationId "com.example.post28"
-        minSdk 22
+        minSdk 27
         targetSdk 28
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++17"
+            }
+        }
     }
 
     buildTypes {
@@ -33,10 +40,25 @@ android {
     buildFeatures {
         viewBinding true
     }
+    externalNativeBuild {
+        cmake {
+            version '3.18.1'
+            path "src/main/cpp/CMakeLists.txt"
+        }
+    }
+    aaptOptions {
+        noCompress 'bin'
+    }
 }
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation "androidx.activity:activity-ktx:1.0.0"
     implementation "androidx.heifwriter:heifwriter:1.0.0-rc01"
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
     testImplementation "junit:junit:$junit_version"
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test:core-ktx:1.1.0'
+    androidTestImplementation 'androidx.test.ext:junit-ktx:1.1.0'
 }

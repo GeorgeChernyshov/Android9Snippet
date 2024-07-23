@@ -22,7 +22,7 @@
 
         <activity
             android:label="@string/label_indoor_positioning"
-            android:name="com.example.post28.IndoorPositioningActivity"
+            android:name="com.example.post28.activity.IndoorPositioningActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,21 +33,26 @@
 
         <activity
             android:label="@string/label_new_features"
-            android:name=".NewFeaturesActivity"
+            android:name=".activity.NewFeaturesActivity"
             android:exported="true" />
 
         <activity
             android:label="@string/label_camera"
-            android:name=".CameraActivity"
+            android:name=".activity.CameraActivity"
             android:exported="true" />
 
         <activity
             android:label="@string/label_hdr"
-            android:name=".HDRActivity"
+            android:name=".activity.HDRActivity"
+            android:exported="true" />
+
+        <activity
+            android:label="@string/label_neural_network"
+            android:name=".activity.NeuralNetworkActivity"
             android:exported="true" />
 
         <receiver
-            android:name="com.example.post28.ReplyReceiver" />
+            android:name="com.example.post28.notifications.ReplyReceiver" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

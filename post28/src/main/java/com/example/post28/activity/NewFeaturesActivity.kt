@@ -1,4 +1,4 @@
-package com.example.post28
+package com.example.post28.activity
 
 import android.content.Intent
 import android.graphics.Color
@@ -15,6 +15,9 @@ import android.os.Build
 import android.os.Bundle
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import com.example.post28.DIUtils
+import com.example.post28.notifications.NotificationHelper
+import com.example.post28.R
 import com.example.post28.databinding.ActivityNewFeaturesBinding
 
 class NewFeaturesActivity : AppCompatActivity() {

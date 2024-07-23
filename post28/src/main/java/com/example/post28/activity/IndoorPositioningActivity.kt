@@ -1,4 +1,4 @@
-package com.example.post28
+package com.example.post28.activity
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -9,6 +9,7 @@ import android.net.wifi.rtt.WifiRttManager
 import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.post28.R
 import com.example.post28.databinding.ActivityIndoorPositioningBinding
 
 class IndoorPositioningActivity : AppCompatActivity() {
@@ -31,7 +32,7 @@ class IndoorPositioningActivity : AppCompatActivity() {
         ) {
             binding.indoorPositioningTextView.text = getText(R.string.indoor_positioning_rtt_not_supported)
         } else {
-            val wifiRttManager = getSystemService(Context.WIFI_RTT_RANGING_SERVICE) as WifiRttManager
+            val wifiRttManager = getSystemService(WIFI_RTT_RANGING_SERVICE) as WifiRttManager
             val filter = IntentFilter(WifiRttManager.ACTION_WIFI_RTT_STATE_CHANGED)
 
             val myReceiver = object: BroadcastReceiver() {

@@ -1,4 +1,4 @@
-package com.example.post28
+package com.example.post28.notifications
 
 import android.app.PendingIntent
 import android.content.Context
@@ -8,6 +8,8 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.app.Person
 import androidx.core.app.RemoteInput
+import com.example.post28.Post28Application
+import com.example.post28.R
 
 class NotificationHelper(private val context: Context) {
 
@@ -22,8 +24,7 @@ class NotificationHelper(private val context: Context) {
             .setImportant(true)
             .build()
 
-        val builder = NotificationCompat
-            .Builder(context, Post28Application.CHAT_CHANNEL)
+        val builder = NotificationCompat.Builder(context, Post28Application.CHAT_CHANNEL)
             .setSmallIcon(R.drawable.ic_launcher_foreground)
             .setContentTitle(context.getString(R.string.notification_title))
             .setContentText(context.getString(R.string.notification_text))
@@ -31,8 +32,7 @@ class NotificationHelper(private val context: Context) {
             .addPerson(sender.uri)
             .setOnlyAlertOnce(true)
             .setStyle(
-                NotificationCompat
-                    .MessagingStyle(user)
+                NotificationCompat.MessagingStyle(user)
                     .addMessage(
                         NotificationCompat.MessagingStyle.Message(
                             "Check this out",
@@ -45,8 +45,7 @@ class NotificationHelper(private val context: Context) {
                     )
             )
             .addAction(
-                NotificationCompat.Action
-                .Builder(
+                NotificationCompat.Action.Builder(
                     R.drawable.ic_launcher_foreground,
                     "Reply",
                     PendingIntent.getBroadcast(
@@ -73,8 +72,7 @@ class NotificationHelper(private val context: Context) {
     }
 
     fun showSystemNotification() {
-        val builder = NotificationCompat
-            .Builder(context, Post28Application.SYSTEM_CHANNEL)
+        val builder = NotificationCompat.Builder(context, Post28Application.SYSTEM_CHANNEL)
             .setSmallIcon(R.drawable.ic_launcher_foreground)
             .setContentTitle(context.getString(R.string.notification_title))
             .setContentText(context.getString(R.string.notification_text))

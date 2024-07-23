@@ -1,6 +1,5 @@
-package com.example.post28
+package com.example.post28.activity
 
-import android.content.Context
 import android.content.Intent
 import android.hardware.camera2.CameraCharacteristics
 import android.hardware.camera2.CameraManager
@@ -8,6 +7,7 @@ import android.hardware.camera2.CameraMetadata
 import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.post28.R
 import com.example.post28.databinding.ActivityCameraBinding
 
 class CameraActivity : AppCompatActivity() {
@@ -21,7 +21,7 @@ class CameraActivity : AppCompatActivity() {
         binding = ActivityCameraBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        cameraManager = getSystemService(Context.CAMERA_SERVICE) as CameraManager
+        cameraManager = getSystemService(CAMERA_SERVICE) as CameraManager
         binding.nextButton.setOnClickListener {
             startActivity(Intent(this, HDRActivity::class.java))
         }

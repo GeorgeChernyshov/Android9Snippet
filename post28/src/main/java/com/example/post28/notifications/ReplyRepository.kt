@@ -1,4 +1,4 @@
-package com.example.post28
+package com.example.post28.notifications
 
 class ReplyRepository {
     var replyText: String? = null

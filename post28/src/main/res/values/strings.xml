@@ -5,6 +5,7 @@
     <string name="label_camera">Multi-camera Support</string>
     <string name="label_hdr">HDR Video</string>
     <string name="label_indoor_positioning">post28-Indoor Positioning</string>
+    <string name="label_neural_network">Neural Network</string>
     <string name="label_new_features">New Features</string>
 
     <!-- Button labels -->
@@ -38,6 +39,14 @@
     <string name="indoor_positioning_title">Indoor positioning</string>
     <string name="indoor_positioning_rtt_disabled">Wi-Fi RTT is disabled</string>
     <string name="indoor_positioning_rtt_not_supported">Wi-Fi RTT is not supported</string>
+
+    <!-- Neural network -->
+    <string name="neural_check_status">Check neural network status</string>
+    <string name="neural_status_destroyed">Destroyed</string>
+    <string name="neural_status_ready">Ready</string>
+    <string name="neural_status_unknown">Unknown</string>
+    <string name="neural_train_network">Init neural network</string>
+    <string name="neural_train_status">Neural network status: %s</string>
 
     <!-- Notifications -->
     <string name="notification_chat_channel_name">Chat Notification Channel</string>

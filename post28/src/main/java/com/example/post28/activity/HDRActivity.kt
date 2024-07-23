@@ -1,4 +1,4 @@
-package com.example.post28
+package com.example.post28.activity
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -38,6 +38,11 @@ class HDRActivity : AppCompatActivity() {
 
 //        DownloadFile().execute(VIDEO_URL)
         with(binding) {
+
+            nextButton.setOnClickListener {
+                startActivity(Intent(this@HDRActivity, NeuralNetworkActivity::class.java))
+            }
+
             with(videoView) {
                 setVideoPath(VIDEO_URL)
                 setOnErrorListener { p0, p1, p2 ->
